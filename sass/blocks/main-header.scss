@@ -1,0 +1,96 @@
+.main-header {
+  position: relative;
+  width: 320px;
+  min-height: 444px;
+  margin: 0 auto;
+  text-align: center;
+  background:
+          url("../img/main-header__bg-text--mobile.png") no-repeat 50% 145px,
+          url("../img/main-header__bg-triangle--mobile.png") no-repeat 50% 100%,
+          url("../img/main-header__bg--mobile.jpg") no-repeat 50% 55px;
+}
+
+.main-header--inner {
+  min-height: 213px;
+  background:
+          url("../img/main-header__bg-text-inner--mobile.png") no-repeat 50% 107px,
+          url("../img/main-header__bg-triangle--mobile.png") no-repeat 50% 100%,
+          url("../img/main-header__bg--mobile.jpg") no-repeat 50% 100%;
+}
+
+.main-header__menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 55px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.main-header__button-icon,
+.main-header__button-icon::before,
+.main-header__button-icon::after {
+  content: "";
+  width: 23px;
+  height: 4px;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+
+  background-color: $link-bg-color;
+}
+
+.main-header__button-icon::before {
+  top: -8px;
+  left: 0;
+}
+
+.main-header__button-icon::after {
+  top: 8px;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    width: 768px;
+    min-height: 518px;
+    margin-top: -28px;
+    background:
+            url("../img/main-header__bg-text--tablet.png") no-repeat 50% 76px,
+            url("../img/main-header__bg-triangle--tablet.png") no-repeat 50% 100%,
+            url("../img/main-header__bg--tablet.jpg") no-repeat 50% 0;
+  }
+
+  .main-header--inner {
+    min-height: 290px;
+    background:
+            url("../img/main-header__bg-text-inner--tablet.png") no-repeat 50% 96px,
+            url("../img/main-header__bg-triangle--tablet.png") no-repeat 50% 100%,
+            url("../img/main-header__bg--tablet.jpg") no-repeat 50% 100%;
+  }
+
+  .main-header__menu-button {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-header {
+    width: 1200px;
+    min-height: 518px;
+    margin-top: -40px;
+    background:
+            url("../img/main-header__bg-text--desktop.png") no-repeat 50% 78px,
+            url("../img/main-header__bg-triangle--desktop.svg") no-repeat 50% 100%,
+            url("../img/main-header__bg--desktop.jpg") no-repeat 50% 0;
+  }
+
+  .main-header--inner {
+    min-height: 300px;
+    background:
+            url("../img/main-header__bg-text-inner--tablet.png") no-repeat 50% 103px,
+            url("../img/main-header__bg-triangle--desktop.png") no-repeat 50% 100%,
+            url("../img/main-header__bg--desktop.jpg") no-repeat 50% 100%;
+  }
+}

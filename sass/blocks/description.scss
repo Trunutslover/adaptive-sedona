@@ -1,0 +1,44 @@
+.description {
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("../img/description__bg-triangle--mobile.svg") no-repeat 50% 100%;
+}
+
+.description__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.description__reasons {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+  .description {
+    width: 768px;
+    padding: 33px 80px;
+
+    background: none;
+  }
+
+  .description__title {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 28px;
+  }
+
+  .description__reasons {
+    font-size: 14px;
+  }
+;
+}

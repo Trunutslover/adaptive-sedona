@@ -1,0 +1,66 @@
+$link-bg-color: #81b3d2;
+$hover-link-bg-color: #669ec0;
+$active-link-bg-color: #5496bd;
+$active-link-color: #94b9d2;
+
+@font-face {
+  font-family: 'pt_sansbold';
+  src: url("../fonts/pt_sans-web-bold-webfont.woff2") format('woff2'),
+  url('../fonts/pt_sans-web-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'pt_sansbold_italic';
+  src: url('../fonts/pt_sans-web-bolditalic-webfont.woff2') format('woff2'),
+  url('../fonts/pt_sans-web-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'pt_sansitalic';
+  src: url('../fonts/pt_sans-web-italic-webfont.woff2') format('woff2'),
+  url('../fonts/pt_sans-web-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../fonts/pt_sans-web-regular-webfont.woff2') format('woff2'),
+  url('../fonts/pt_sans-web-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  font-family: "pt_sans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+@import "blocks/main-nav.scss";
+@import "blocks/main-header.scss";
+@import "blocks/description.scss";
+@import "blocks/reasons.scss";
+@import "blocks/search-hotel.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/photo.scss";
+@import "blocks/video.scss";
+@import "blocks/form.scss";
+@import "blocks/feedback.scss";

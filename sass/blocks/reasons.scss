@@ -1,0 +1,382 @@
+.reasons {
+  width: 320px;
+  margin: 0 auto;
+
+}
+
+.reasons__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.reasons__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: $link-bg-color;
+}
+
+.reasons__item-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.reasons__title {
+  padding-top: 40px;
+  margin: 0;
+  padding-bottom: 9px;
+
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+
+}
+
+.reasons__number {
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 15px;
+  color: inherit;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 2px;
+    position: absolute;
+    background-color: #ffffff;
+    top: 10px;
+    left: 136px;
+  }
+
+  &::after {
+    left: 175px;
+  }
+}
+
+.reasons__description {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  padding-bottom: 40px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+
+}
+
+.reasons__image {
+  display: block;
+  width: 320px;
+  height: 260px;
+  margin: 0;
+}
+
+.reasons__image--city {
+  background: url("../img/reasons__image--city.jpg") no-repeat 0 0;
+}
+
+.reasons__image--bridge {
+  background: url("../img/reasons__image--bridge.jpg") no-repeat 0 0;
+}
+
+
+.reasons__item--short {
+  color: #000000;
+  background-color: #eeeeee;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    background-color: #d6d6d6;
+  }
+}
+
+.reasons__item--short:last-child::after {
+  display: none;
+}
+
+.reasons__item--short .reasons__number::before,
+.reasons__item--short .reasons__number::after {
+  background-color: #000000;
+}
+
+.reasons__item--short .reasons__title {
+  padding-top: 25px;
+}
+
+.reasons__item--short .reasons__number::before {
+  left: 121px;
+}
+
+.reasons__item--short .reasons__number::after {
+  left: 160px;
+}
+
+.reasons__item--short .reasons__description {
+  padding-bottom: 30px;
+}
+
+.reasons__sublist {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px 0;
+  padding-top: 34px;
+  padding-bottom: 9px;
+  list-style: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.reasons__subitem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 37px;
+    height: 36px;
+    top: -8px;
+    left: 20px;
+    background: url("../img/reasons__icon--house.svg") no-repeat 50% 50%;
+    -webkit-background-size: 37px 36px;
+    background-size: 37px 36px;
+    fill: $link-bg-color;
+  }
+
+}
+
+.reasons__subitem:nth-child(2)::before {
+  background-image: url("../img/reasons__icon--gift.svg");
+}
+
+.reasons__subitem:nth-child(3)::before {
+  background-image: url("../img/reasons__icon--burger.svg");
+}
+
+.reasons__subitem-title {
+  margin: 0;
+  padding-top: 0px;
+  padding-left: 70px;
+  padding-bottom: 0;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.reasons__subitem-description {
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 70px;
+  padding-right: 20px;
+  padding-bottom: 27px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .reasons {
+    width: 768px;
+  }
+
+  .reasons__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .reasons__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .reasons__item--short {
+    width: 256px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .reasons__item-card {
+    width: 256px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .reasons__title {
+    padding-top: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 21px;
+  }
+
+  .reasons__number {
+    padding-bottom: 22px;
+  }
+
+  .reasons__number::before {
+    left: 104px;
+  }
+
+  .reasons__number::after {
+    left: 143px;
+  }
+
+  .reasons__description {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .reasons__item--short .reasons__number::before {
+    left: 88px;
+  }
+
+  .reasons__item--short .reasons__number::after {
+    left: 127px;
+  }
+
+  .reasons__item--short .reasons__title {
+    padding-top: 45px;
+  }
+
+  .reasons__item--short .reasons__description {
+    padding-bottom: 45px;
+  }
+
+  .reasons__image {
+    width: 512px;
+    height: 256px;
+  }
+
+  .reasons__image--city {
+    background: url("../img/reasons__image--city-tablet.jpg") no-repeat 0 0;
+  }
+
+  .reasons__image--bridge {
+    order: -1;
+    background: url("../img/reasons__image--bridge-tablet.jpg") no-repeat 0 0;
+  }
+
+  .reasons__sublist {
+    flex-direction: row;
+  }
+
+  .reasons__subitem {
+    width: 256px;
+    text-align: center;
+
+    &::before {
+      width: 77px;
+      height: 90px;
+      top: 20px;
+      left: 90px;
+      -webkit-background-size: 70px;
+      background-size: 70px;
+    }
+  }
+
+  .reasons__subitem-title {
+    font-size: 21px;
+    padding-top: 125px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .reasons__subitem-description {
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 21px;
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reasons {
+    width: 1200px;
+  }
+
+  .reasons__item-card {
+    width: 400px;
+  }
+
+  .reasons__title {
+    padding-top: 52px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .reasons__number::before {
+    left: 175px;
+  }
+
+  .reasons__number::after {
+    left: 214px;
+  }
+
+  .reasons__image {
+    width: 800px;
+  }
+
+  .reasons__image--city {
+    background-image: url("../img/reasons__image--city-desktop.jpg");
+  }
+
+  .reasons__image--bridge {
+    background-image: url("../img/reasons__image--bridge-desktop.jpg");
+  }
+
+  .reasons__item--short {
+    width: 400px;
+  }
+
+  .reasons__item--short .reasons__number::before {
+    left: 160px;
+  }
+
+  .reasons__item--short .reasons__number::after {
+    left: 199px;
+  }
+
+  .reasons__subitem {
+    width: 400px;
+
+    &::before {
+      left: 160px;
+    }
+  }
+
+  .reasons__subitem-description {
+    padding-bottom: 74px;
+  }
+}
