@@ -51,6 +51,10 @@
   left: 0;
 }
 
+.main-header__menu-button--hide {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .main-header {
     width: 768px;

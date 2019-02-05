@@ -24,7 +24,7 @@
 }
 
 .photo__items {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -38,13 +38,11 @@
 }
 
 .photo__image {
-  margin: 0 auto;
   width: 280px;
   height: 280px;
-}
-
-.photo__image--1 {
-  background: url("../img/photo-1--mobile.jpg") no-repeat 50% 50%;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
 }
 
 .photo__image--2 {
@@ -141,7 +139,6 @@
   .photo__image--1 {
     width: 648px;
     height: 400px;
-    background-image: url("../img/photo-1--tablet.jpg");
   }
 
   .photo__image--2 {
@@ -198,7 +195,6 @@
   .photo__image--1 {
     width: 1200px;
     height: 400px;
-    background-image: url("../img/photo-1--desktop.jpg");
   }
 
   .photo__image--2 {

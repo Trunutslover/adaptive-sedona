@@ -13,7 +13,13 @@
             <ul class="main-nav__menu">
                 <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
-                <li class="main-nav__item"><a class="main-nav__logo" href="#"></a></li>
+                <li class="main-nav__item"><a class="main-nav__logo" href="#">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/main-nav__logo--desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/main-nav__logo--tablet.svg">
+                        <img src="img/main-nav__logo--mobile.svg" alt="Логотип">
+                    </picture>
+                </a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
             </ul>
@@ -27,7 +33,11 @@
         <p class="photo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.</p>
         <ul class="photo__items">
             <li class="photo__item">
-                <p class="photo__image photo__image--1"><span class="visually-hidden">Неродные просторы</span></p>
+                <picture class="photo__image photo__image--1">
+                    <source media="(min-width: 1200px)" srcset="img/photo-1--desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-1--tablet.jpg">
+                    <img src="img/photo-1--mobile.jpg" alt="Неродные просторы">
+                </picture>
                 <div class="photo__wrapper">
                     <div class="photo__col1">
                         <h3 class="photo__item-title">Неродные просторы</h3>

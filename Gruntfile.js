@@ -41,6 +41,18 @@ module.exports = function (grunt) {
             }
 
         },
+        imagemin: {
+            images: {
+                options: {
+                    optimizationLevel: 3,
+                    progressive: true
+                },
+                files: [{
+                    expand: true,
+                    src: ["img/**/*.{png, jpg, svg}"]
+                }]
+            }
+        },
         watch: {
             html: {
                 files: ["*.html"],
@@ -52,6 +64,10 @@ module.exports = function (grunt) {
             },
             newfiles: {
                 files: ["img/**"],
+                tasks: ["imagemin", "copy"]
+            },
+            js: {
+                files: ["js/**"],
                 tasks: ["copy"]
             }
         },

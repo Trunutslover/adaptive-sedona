@@ -85,15 +85,6 @@
   margin: 0;
 }
 
-.reasons__image--city {
-  background: url("../img/reasons__image--city.jpg") no-repeat 0 0;
-}
-
-.reasons__image--bridge {
-  background: url("../img/reasons__image--bridge.jpg") no-repeat 0 0;
-}
-
-
 .reasons__item--short {
   color: #000000;
   background-color: #eeeeee;
@@ -279,13 +270,8 @@
     height: 256px;
   }
 
-  .reasons__image--city {
-    background: url("../img/reasons__image--city-tablet.jpg") no-repeat 0 0;
-  }
-
   .reasons__image--bridge {
     order: -1;
-    background: url("../img/reasons__image--bridge-tablet.jpg") no-repeat 0 0;
   }
 
   .reasons__sublist {
@@ -346,14 +332,6 @@
 
   .reasons__image {
     width: 800px;
-  }
-
-  .reasons__image--city {
-    background-image: url("../img/reasons__image--city-desktop.jpg");
-  }
-
-  .reasons__image--bridge {
-    background-image: url("../img/reasons__image--bridge-desktop.jpg");
   }
 
   .reasons__item--short {

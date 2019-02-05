@@ -7,6 +7,7 @@ $active-link-color: #94b9d2;
   font-family: 'pt_sansbold';
   src: url("../fonts/pt_sans-web-bold-webfont.woff2") format('woff2'),
   url('../fonts/pt_sans-web-bold-webfont.woff') format('woff');
+  font-display: swap;
   font-weight: bold;
   font-style: normal;
 
@@ -16,6 +17,7 @@ $active-link-color: #94b9d2;
   font-family: 'pt_sansbold_italic';
   src: url('../fonts/pt_sans-web-bolditalic-webfont.woff2') format('woff2'),
   url('../fonts/pt_sans-web-bolditalic-webfont.woff') format('woff');
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 
@@ -25,6 +27,7 @@ $active-link-color: #94b9d2;
   font-family: 'pt_sansitalic';
   src: url('../fonts/pt_sans-web-italic-webfont.woff2') format('woff2'),
   url('../fonts/pt_sans-web-italic-webfont.woff') format('woff');
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 
@@ -34,6 +37,7 @@ $active-link-color: #94b9d2;
   font-family: 'pt_sansregular';
   src: url('../fonts/pt_sans-web-regular-webfont.woff2') format('woff2'),
   url('../fonts/pt_sans-web-regular-webfont.woff') format('woff');
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 

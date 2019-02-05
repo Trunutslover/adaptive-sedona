@@ -13,7 +13,13 @@
             <ul class="main-nav__menu">
                 <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
-                <li class="main-nav__item"><a class="main-nav__logo" href="index.html"></a></li>
+                <li class="main-nav__item"><a class="main-nav__logo" href="index.html">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/main-nav__logo--desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/main-nav__logo--tablet.svg">
+                        <img src="img/main-nav__logo--mobile.svg" alt="Логотип">
+                    </picture>
+                </a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
             </ul>

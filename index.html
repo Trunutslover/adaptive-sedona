@@ -5,21 +5,29 @@
     <title>Sedona</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <link rel="preload" href="fonts/pt_sans-web-regular-webfont.woff2" as="font">
+    <link rel="preload" href="fonts/pt_sans-web-bold-webfont.woff2" as="font">
 </head>
 <body>
     <header class="page-header">
         <nav class="main-nav">
-            <button class="main-nav__close-button"></button>
+            <button class="main-nav__close-button main-nav__close-button--hide"></button>
             <ul class="main-nav__menu">
                 <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
-                <li class="main-nav__item"><a class="main-nav__logo" href="#"></a></li>
+                <li class="main-nav__item"><a class="main-nav__logo" href="#">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/main-nav__logo--desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/main-nav__logo--tablet.svg">
+                        <img src="img/main-nav__logo--mobile.svg" alt="Логотип">
+                    </picture>
+                </a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
             </ul>
         </nav>
         <section class="main-header">
-            <button class="main-header__menu-button"><span class="visually-hidden">Меню</span><span class="main-header__button-icon"></span></button>
+            <button class="main-header__menu-button main-header__menu-button--hide"><span class="visually-hidden">Меню</span><span class="main-header__button-icon"></span></button>
         </section>
     </header>
     <main class="page-main">
@@ -36,7 +44,11 @@
                         <p class="reasons__number">№1</p>
                         <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
-                    <p class="reasons__image reasons__image--city"></p>
+                    <picture class="reasons__image">
+                            <source media="(min-width: 1200px)" srcset="img/reasons__image--city-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="img/reasons__image--city-tablet.jpg">
+                            <img src="img/reasons__image--city.jpg" alt="Фото Седоны">
+                    </picture>
                     <ul class="reasons__sublist">
                         <li class="reasons__subitem">
                             <h4 class="reasons__subitem-title">Жилье</h4>
@@ -58,7 +70,11 @@
                         <p class="reasons__number">№2</p>
                         <p class="reasons__description">Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
                     </div>
-                    <p class="reasons__image reasons__image--bridge"></p>
+                    <picture class="reasons__image reasons__image--bridge">
+                        <source media="(min-width: 1200px)" srcset="img/reasons__image--bridge-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="img/reasons__image--bridge-tablet.jpg">
+                        <img src="img/reasons__image--bridge.jpg" alt="Фото моста Дьявола">
+                    </picture>
                 </li>
                 <li class="reasons__item reasons__item--short">
                     <div class="reasons__item-card">
@@ -145,5 +161,6 @@
                 </svg>
         </a>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
